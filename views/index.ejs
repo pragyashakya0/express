@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    <% employeeList.forEach((employee,index) => { %>
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title"><%= employee.name %></h5>
+          <p class="card-text"><%= employee.email %></p>
+        </div>
+      </div>
+    <% }) %>
+
+    
+  </body>
+</html>
